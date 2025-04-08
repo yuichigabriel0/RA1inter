@@ -1,0 +1,6 @@
+5
+(\neg 1a)
+(\wedge 1x2 2z)
+false
+(\rightarrow 1 2a)
+(\wedge 3 \neg 9a)
