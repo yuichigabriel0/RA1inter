@@ -1,0 +1,7 @@
+6
+true
+(\neg false)
+(\vee (\neg 1b) 3c)
+(\leftrightarrow 1 (\wedge 2 3))
+(\rightarrow (\neg 1) (\vee 2 3))
+(\wedge (\neg) 1a)
