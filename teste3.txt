@@ -1,0 +1,13 @@
+12
+(\neg (\wedge 1x (\vee 2y false)))
+(\vee (\neg 9z) (\neg (\rightarrow 1a 2b)))
+(\rightarrow (\wedge true false) (\leftrightarrow 3x 4y))
+(\neg (\neg (\neg (\neg 1a))))
+(\wedge (\wedge 1 2) (\wedge 3 4))
+(\leftrightarrow (\neg (\vee (\neg 3) 2)) (\wedge 1 (\neg 2a)))
+(\neg (\vee (\neg 3) (\neg)))
+(\wedge 1a)
+(\wedge (\neg 1b) (\vee (\wedge 2c 3d)))
+(\wedge (\neg 1b) (\vee 2c 3d) 4e)
+(\rightarrow (\neg 3x) (\leftrightarrow (\neg 4y) false))
+(\vee (\wedge (\wedge 1 2) (\wedge 3 4)) (\wedge (\neg 5) 6))
