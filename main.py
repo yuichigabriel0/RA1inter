@@ -1,3 +1,5 @@
+#GABRIEL YUICHI SUZAKI
+#MARIA JULIA PRADO LAZAROTO
 from lexer import lexer
 from parser import Parser
 import sys
