@@ -13,10 +13,10 @@ TOKENS_ESPECIAIS = {
 }
 
 #2- Verifica se c é uma letra minúscula (entre 'a' e 'z').
-def eh_letra_minuscula(c):
+def letra_minuscula(c):
     return 'a' <= c <= 'z'
 #3- Verifica se c é um dígito (0 a 9).
-def eh_digito(c):
+def digito(c):
     return '0' <= c <= '9'
 #4- Essa é a principal. Ela recebe uma string da expressão lógica e retorna uma lista de tokens.  tokens guarda os tokens que serão encontrados. i é o índice do caractere atual. n é o tamanho total da string.
 def lexer(expr):
@@ -46,7 +46,7 @@ def lexer(expr):
 #8- Quando vê uma barra (\), começa a ler um operador. Junta tudo até formar algo como \neg, \vee, etc. Se for válido, adiciona como token. Se não for reconhecido, retorna None (expressão inválida).
         if expr[i] == '\\':  # operadores LaTeX sempre começam com '\'
             inicio = i
-            while i < n and (eh_letra_minuscula(expr[i]) or expr[i] == '\\'):
+            while i < n and (letra_minuscula(expr[i]) or expr[i] == '\\'):
                 i += 1
             valor = expr[inicio:i]
             if valor in TOKENS_ESPECIAIS:
@@ -68,10 +68,10 @@ def lexer(expr):
 
         # Proposição
 #10- Começa com número (1, 2, etc), depois pode vir letras minúsculas. Exemplo: 1a, 2z, 3p → vira token de tipo PROPOSICAO.
-        if eh_digito(c):
+        if edigito(c):
             inicio = i
             i += 1
-            while i < n and (eh_digito(expr[i]) or eh_letra_minuscula(expr[i])):
+            while i < n and (digito(expr[i]) or letra_minuscula(expr[i])):
                 i += 1
             valor = expr[inicio:i]
             tokens.append(("PROPOSICAO", valor))
