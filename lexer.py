@@ -68,7 +68,7 @@ def lexer(expr):
 
         # Proposição
 #10- Começa com número (1, 2, etc), depois pode vir letras minúsculas. Exemplo: 1a, 2z, 3p → vira token de tipo PROPOSICAO.
-        if edigito(c):
+        if digito(c):
             inicio = i
             i += 1
             while i < n and (digito(expr[i]) or letra_minuscula(expr[i])):
