@@ -1,0 +1,35 @@
+TESTE1
+5
+(\neg 1a)
+(\wedge 1x2 2z)
+false
+(\rightarrow 1 2a)
+(\wedge 3 \neg 9a) -> deveria ser: (\wedge 3 (\neg 9a))
+
+TESTE2
+6
+true
+(\neg false)
+(\vee (\neg 1b) 3c)
+(\leftrightarrow 1 (\wedge 2 3))
+(\rightarrow (\neg 1) (\vee 2 3))
+(\wedge (\neg) 1a) -> deveria ser: (\wedge (\neg 1b) 1a) ou (\wedge (\neg 3) 1a)
+
+
+
+TESTE3
+12
+(\neg (\wedge 1x (\vee 2y false)))
+(\vee (\neg 9z) (\neg (\rightarrow 1a 2b)))
+(\rightarrow (\wedge true false) (\leftrightarrow 3x 4y))
+(\neg (\neg (\neg (\neg 1a))))
+(\wedge (\wedge 1 2) (\wedge 3 4))
+(\leftrightarrow (\neg (\vee (\neg 3) 2)) (\wedge 1 (\neg 2a)))
+
+(\neg (\vee (\neg 3) (\neg))) -> falta argumento no (\neg)
+(\wedge 1a) -> falta segundo argumento
+(\wedge (\neg 1b) (\vee (\wedge 2c 3d))) -> \vee só tem 1 argumento
+(\wedge (\neg 1b) (\vee 2c 3d) 4e) -> tem 3 argumentos
+
+(\rightarrow (\neg 3x) (\leftrightarrow (\neg 4y) false))
+(\vee (\wedge (\wedge 1 2) (\wedge 3 4)) (\wedge (\neg 5) 6))
